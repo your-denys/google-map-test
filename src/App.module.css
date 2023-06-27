@@ -1,0 +1,81 @@
+.leftBar {
+  width: 230px;
+  height: 93%;
+  left: 10px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 20px;
+  align-self: center;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+  -ms-overflow-style: none;
+      scrollbar-width: none;
+}
+
+.leftBar div {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.leftBar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.leftBar img {
+  width: 200px;
+  height: 80px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.rightBar {
+  width: 270px;
+  height: 67%;
+  right: 10px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  border-radius: 20px;
+  align-self: center;
+  display: block;
+  overflow: auto;
+  text-align: center;
+  -ms-overflow-style: none;
+      scrollbar-width: none;
+}
+
+.rightBar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.rightBar img {
+  width: 250px;
+  height: 100px;
+}
+
+.add {
+  max-width: 300px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.add button {
+  width: 200px;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
